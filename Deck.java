@@ -1,23 +1,17 @@
 import java.util.Random;
 
-/**
- * Represents a deck of playing cards.
- */
+//define ranks and suits classes
 public class Deck {
     private Card[] cards; // Array to hold the cards in the deck
     private static final String[] RANKS = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
     private static final String[] SUITS = {"Hearts", "Diamonds", "Clubs", "Spades"};
 
-    /**
-     * Default constructor that initializes an empty Deck.
-     */
+    //creates deck
     public Deck() {
-        cards = new Card[52]; // Create a deck with 52 cards
+        cards = new Card[52];
     }
 
-    /**
-     * Fills the deck with a new set of Card objects.
-     */
+    //fills the deck
     public void fill() {
         int index = 0;
         for (String suit : SUITS) {
@@ -27,9 +21,7 @@ public class Deck {
         }
     }
 
-    /**
-     * Shuffles the cards in the deck.
-     */
+    //shuffles deck
     public void shuffle() {
         Random random = new Random();
         for (int i = 0; i < cards.length; i++) {
@@ -41,11 +33,7 @@ public class Deck {
         }
     }
 
-    /**
-     * Returns a string representation of the deck, showing all cards.
-     *
-     * @return A string representing the current order of cards in the deck.
-     */
+    //returns deck
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
