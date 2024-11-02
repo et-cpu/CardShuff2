@@ -5,7 +5,7 @@ import java.util.Random;
  */
 public class Deck {
     private Card[] cards; // Array to hold the cards in the deck
-    private static final String[] RANKS = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+    private static final String[] RANKS = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
     private static final String[] SUITS = {"Hearts", "Diamonds", "Clubs", "Spades"};
 
     /**

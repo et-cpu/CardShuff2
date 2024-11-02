@@ -19,11 +19,11 @@ public class CardShuff2 {
         System.out.println(deck.toString());
 
         // Example of user input (not specified in original requirements)
-        System.out.println("\nWould you like to shuffle the deck again? (yes/no)");
+        System.out.println("\nShuffle again? (Y/N)");
         String input = scanner.nextLine();
-        if (input.equalsIgnoreCase("yes")) {
+        if (input.equalsIgnoreCase("Y")) {
             deck.shuffle();
-            System.out.println("\nDeck after re-shuffling:");
+            System.out.println("\nRe-shuffling:");
             System.out.println(deck.toString());
         }
 
