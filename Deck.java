@@ -34,7 +34,6 @@ public class Deck {
     }
 
     //returns deck
-    @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (Card card : cards) {
